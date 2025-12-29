@@ -1,0 +1,48 @@
+composer global require laravel/installer
+laravel new PROJECT_NAME
+
+
+composer create-project laravel/laravel PROJECT_NAME "10.*"
+composer create-project laravel/laravel PROJECT_NAME
+
+php artisan make:model MODEL_NAME -m
+php artisan make:model MODEL_NAME
+
+
+composer require filament/filament:"^3.0"
+composer require filament/filament
+
+
+php artisan make:filament-user
+
+
+php artisan make:filament-resource RESOURCE_NAME --generate --panel=admin
+php artisan make:filament-resource RESOURCE_NAME --generate
+php artisan make:filament-resource RESOURCE_NAME
+
+
+php artisan make:filament-panel admin
+php artisan make:filament-panel user
+
+
+php artisan key:generate
+
+
+php artisan cache:clear
+
+
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+
+
+php artisan optimize:clear
+
+
+php artisan optimize
+
+
+php artisan tinker
+
+
+php artisan serve
