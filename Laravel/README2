@@ -1,0 +1,57 @@
+# Laravel Installer quraşdırmaq (global)
+composer global require laravel/installer
+# Yeni Laravel layihəsi yaratmaq (Laravel installer ilə)
+laravel new PROJECT_NAME
+
+# Yeni Laravel layihəsi yaratmaq Composer ilə və xüsusi versiya göstərmək
+composer create-project laravel/laravel PROJECT_NAME "10.*"
+# Yeni Laravel layihəsi yaratmaq Composer ilə (son stabil versiya)
+composer create-project laravel/laravel PROJECT_NAME
+
+# Model yaratmaq və migration əlavə etmək
+php artisan make:model MODEL_NAME -m
+# Sadəcə model yaratmaq (migration olmadan)
+php artisan make:model MODEL_NAME
+
+# Filament paketini layihəyə əlavə etmək (spesifik versiya ilə)
+composer require filament/filament:"^3.0"
+# Filament paketini layihəyə əlavə etmək (son versiya)
+composer require filament/filament
+
+# Filament admin istifadəçi yaratmaq (login üçün)
+php artisan make:filament-user
+
+# Filament resource yaratmaq və admin panelinə əlavə etmək
+php artisan make:filament-resource RESOURCE_NAME --generate --panel=admin
+# Filament resource yaratmaq və generate etmək (default panel)
+php artisan make:filament-resource RESOURCE_NAME --generate
+# Filament resource yaratmaq (sadəcə skeleton)
+php artisan make:filament-resource RESOURCE_NAME
+
+# Filament üçün ayrıca panel yaratmaq (admin)
+php artisan make:filament-panel admin
+# Filament üçün ayrı panel yaratmaq (user)
+php artisan make:filament-panel user
+
+# Laravel tətbiqi üçün encryption key yaratmaq
+php artisan key:generate
+
+# Laravel cache-lərini təmizləmək
+php artisan cache:clear
+
+# Konfiqurasiya, route və view cache-lərini təmizləmək
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+
+# Bütün cache-ləri bir dəfəlik təmizləmək və optimizasiya clear
+php artisan optimize:clear
+
+# Laravel tətbiqini optimallaşdırmaq (production üçün)
+php artisan optimize
+
+# Laravel interaktiv konsolu açmaq (model və query-ləri test etmək üçün)
+php artisan tinker
+
+# Lokal development serverini işə salmaq
+php artisan serve
