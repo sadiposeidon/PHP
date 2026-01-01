@@ -1,5 +1,13 @@
+which php
+
+
 composer global require laravel/installer
 laravel new PROJECT_NAME
+
+
+PATH PARAMETRLƏRİ
+echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 
 
 composer create-project laravel/laravel PROJECT_NAME "10.*"
